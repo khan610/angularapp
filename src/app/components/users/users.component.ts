@@ -10,10 +10,12 @@ export class UsersComponent implements OnInit {
   users: User[];
   showExtended: boolean = true;
   loaded: boolean = false;
+  enableAdd: boolean = false;
 
   constructor() { }
 
   ngOnInit() {
+
        this.users = [
         {
           firstName: 'Khan',
@@ -23,7 +25,8 @@ export class UsersComponent implements OnInit {
             street: '50 Main st',
             city: 'Boston',
             state: 'MA'
-          }
+          },
+          image: 'http://lorempixel.com/600/600/people/1'
         },
         {
           firstName: 'Kevin',
@@ -33,7 +36,8 @@ export class UsersComponent implements OnInit {
             street: '20 Main st',
             city: 'Lynn',
             state: 'MA'
-          }
+          },
+          image: 'http://lorempixel.com/600/600/people/3'
         },
         {
           firstName: 'Karen',
@@ -43,17 +47,17 @@ export class UsersComponent implements OnInit {
             street: '55 Mill st',
             city: 'Miami',
             state: 'FL'
-          }
+          },
+          image: 'http://lorempixel.com/600/600/people/2'
         }
       ];
 
       this.loaded = true;
-  
-    
-      this.addUser({
-        firstName: 'David',
-        lastName: 'Jackson',       
-      });
+       
+      // this.addUser({
+      //   firstName: 'David',
+      //   lastName: 'Jackson',       
+      // });
     }
 
     addUser(user: User) {

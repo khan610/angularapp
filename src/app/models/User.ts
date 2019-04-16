@@ -1,5 +1,5 @@
 export interface User {
-  firstName: string,
+    firstName: string,
     lastName: string, 
     age?: number,
     adress?: {
@@ -7,4 +7,5 @@ export interface User {
       city?: string,
       state?: string
     }
+    image?: string
 }
