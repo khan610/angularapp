@@ -22,7 +22,7 @@ export class UserComponent implements OnInit {
       firstName: 'Khan',
       lastName: 'the Great',
       age: 30,
-      adress: {
+      address: {
         street: '50 Main st',
         city: 'Boston',
         state: 'MA'
