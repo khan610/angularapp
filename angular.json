@@ -21,8 +21,10 @@
             "assets": [
               "src/favicon.ico"                                ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/font-awesome/css/font-awesome.css",  
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              
               
             ],
             "scripts": [
