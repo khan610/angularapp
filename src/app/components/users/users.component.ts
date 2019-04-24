@@ -8,6 +8,16 @@ import { log } from 'util';
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit {
+  user: User = {
+    firstName: '',
+    lastName: '',
+    age: null,
+    address: {
+      street: '',
+      city: '',
+      state: ''
+    }
+  }
   users: User[];
   showExtended: boolean = true;
   loaded: boolean = false;
