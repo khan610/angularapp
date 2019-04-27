@@ -11,12 +11,7 @@ export class UsersComponent implements OnInit {
   user: User = {
     firstName: '',
     lastName: '',
-    age: null,
-    address: {
-      street: '',
-      city: '',
-      state: ''
-    }
+    email: ''
   }
   users: User[];
   showExtended: boolean = true;
@@ -32,12 +27,7 @@ export class UsersComponent implements OnInit {
         {
           firstName: 'Khan',
           lastName: 'the Great',
-          age: 30,
-          address: {
-            street: '50 Main st',
-            city: 'Boston',
-            state: 'MA'
-          },
+          email: 'khan@gmail.com',
           isActive: true,
           registered: new Date('01/02/2018 08:30:00'),
           hide: true
@@ -45,12 +35,7 @@ export class UsersComponent implements OnInit {
         {
           firstName: 'Kevin',
           lastName: 'Trajko',
-          age: 34,
-          address: {
-            street: '20 Main st',
-            city: 'Lynn',
-            state: 'MA'
-          },
+          email: 'kevin@yahoo.com',
           isActive: false,
           registered: new Date('02/12/2018 06:30:00'),
           hide: true
@@ -58,12 +43,7 @@ export class UsersComponent implements OnInit {
         {
           firstName: 'Karen',
           lastName: 'Williams',
-          age: 26,
-          address: {
-            street: '55 Mill st',
-            city: 'Miami',
-            state: 'FL'
-          },
+          email: 'karen@gmail.com',
           isActive: true,
           registered: new Date('06/06/2018 11:30:00'),
           hide: true
@@ -86,38 +66,26 @@ export class UsersComponent implements OnInit {
       
     }
 
-    addUser() {
-      this.user.isActive = true;
-      this.user.registered = new Date();
+    // addUser() {
+    //   this.user.isActive = true;
+    //   this.user.registered = new Date();
 
-      this.users.unshift(this.user);
+    //   this.users.unshift(this.user);
 
-      this.user = {
-        firstName: '',
-        lastName: '',
-        age: null,
-        address: {
-         street: '',
-         city: '',
-         state: ''
-        }
-      }
+    //   this.user = {
+    //     firstName: '',
+    //     lastName: '',
+    //     email: ''
+    //   }
 
-    }
-
-    onSubmit(e: { preventDefault: () => void; }) {
-      console.log(123);
-
-      e.preventDefault();
-    }
-
-    fireEvent(e) {
-      console.log(e.target.value);
-      console.log(e.type);
-    }
-
-    // toggleHide(user: User) {
-    //   user.hide = !user.hide;
     // }
+
+    onSubmit() {
+      
+    }
+
+    
+
+    
     
 }
